@@ -48,10 +48,12 @@
 .form__content{
     display:flex;
     align-items: center;
-    height: 40px;
+    height: 50px;
+    font-size:20px;
+    font-weight: 700;
     width: 100%;
-    color: #0f5132;
-    background-color: #d1e7dd;
+    color: #033636e5;
+    background-color: #8722e621;
     border-color: #badbcc;
     border-radius: 5px;
 
