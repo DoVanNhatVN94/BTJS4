@@ -109,10 +109,10 @@ function ftTienDien() {
 
 // Button bt 
 document.getElementById("btnBai1").onclick = function () {
-    document.getElementById("form__1").style.display = "block";
+    document.getElementById("form__1").style.display = "flex";
     document.getElementById("form__2").style.display = "none";
 }
 document.getElementById("btnBai2").onclick = function () {
     document.getElementById("form__1").style.display = "none";
-    document.getElementById("form__2").style.display = "block";
+    document.getElementById("form__2").style.display = "flex";
 }

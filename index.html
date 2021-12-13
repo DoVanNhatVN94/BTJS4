@@ -15,55 +15,76 @@
 </head>
 
 <body>
-    <div>
-        <button type="button" id="btnBai1" class="btn btn-success w-25">Bài 1</button>
-        <button type="button" id="btnBai2" class="btn btn-primary w-25">Bài 2</button>
-    </div>
-    <div class="container">
-        <form class="row border border-success py-3 px-2" id="form__1">
 
-            <input type="number" class="form-group col-4 form__input" id="inpDiemChuan" placeholder="Điểm Chuẩn">
+    <div class="container row">
+        <div class="col-2">
+            <div class="row">
+                <div class="col-12 my-1">
+                    <button type="button" id="btnBai1" class="btn btn-success w-25 " title="Bài QUẢN LÝ TUYỂN SINH">Bài
+                        1</button>
+                </div>
+                <div class="col-12 my-1">
+                    <button type="button" id="btnBai2" class="btn btn-primary w-25" title="Bài TÍNH TIỀN ĐIỆN">Bài
+                        2</button>
+                </div>
 
-            <div class="form-group col-4">
-                <select class="form-control form-input my-3" id="inpKhuVuc" placeholder="Chọn Khu Vực">
-                    <option value="Chọn Khu Vực">Chọn Khu Vực</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                </select>
-            </div>
-            <div class="form-group col-4">
-                <select class="form-control form-input my-3" id="inpDoiTuong" placeholder="Chọn Đối Tượng">
-                    <option value="Chọn Đối Tượng">Chọn Đối Tượng</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-            </div>
-            <input type="number" class="form-group col-4 form__input" id="inpDiem1" placeholder="Điểm Môn Thứ 1">
-            <input type="number" class="form-group col-4 form__input" id="inpDiem2" placeholder="Điểm Môn Thứ 2">
-            <input type="number" class="form-group col-4 form__input" id="inpDiem3" placeholder="Điểm Môn Thứ 3">
-            <button type="button" id="btnSum" class="btn btn-success w-25">Kết Quả</button>
-            <div class="form__content py-1 my-2">
-                <span>👉</span>
-                <span class="text-success" id="txtSum"></span>
-            </div>
-        </form>
-        <form class="row border border-primary py-3 px-2" id="form__2">
-            <div class="form-group col-4">
-                <input type="text" class="form-group col-4 form__input" id="inpChuHo" placeholder="Nhập Họ Tên">
-            </div>
-            <div class="form-group col-4">
-                <input type="number" class="form-group col-4 form__input" id="inpKw" placeholder="Nhập Số Kw">
-            </div>
-            <button type="button" id="btnTienDien" class="btn btn-primary w-25">Kết Quả</button>
-            <div class="form__content py-1 my-2">
-                <span>👉</span>
-                <span class="text-success" id="txtTienDien"></span>
             </div>
 
+        </div>
+        <div class="col-10 dis-rl">
+            <form class="row border border-success w-100" id="form__1">
+                <div class="col-4">
+                    <input type="number" class="form__input" id="inpDiemChuan" placeholder="Điểm Chuẩn">
+                </div>
 
-        </form>
+                <div class=" col-4">
+                    <select class="form-control form-input" id="inpKhuVuc" placeholder="Chọn Khu Vực">
+                        <option value="Chọn Khu Vực">Chọn Khu Vực</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class=" col-4">
+                    <select class="form-control form-input" id="inpDoiTuong" placeholder="Chọn Đối Tượng">
+                        <option value="Chọn Đối Tượng">Chọn Đối Tượng</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class=" col-4"><input type="number" class=" form__input" id="inpDiem1"
+                        placeholder="Điểm Môn Thứ 1"></div>
+                <div class=" col-4"> <input type="number" class=" form__input" id="inpDiem2"
+                        placeholder="Điểm Môn Thứ 2"></div>
+                <div class=" col-4"> <input type="number" class=" form__input" id="inpDiem3"
+                        placeholder="Điểm Môn Thứ 3"></div>
+
+
+
+                <button type="button" id="btnSum" class="btn btn-success w-25 m-auto m-1">Kết Quả</button>
+                <div class="form__content col-12">
+                    <span>👉</span>
+                    <span class="text-success" id="txtSum"></span>
+                </div>
+            </form>
+            <form class="row border border-primary" id="form__2">
+                <div class=" col-5">
+                    <input type="text" class=" form__input" id="inpChuHo" placeholder="Nhập Họ Tên">
+                </div>
+                <div class=" col-5">
+                    <input type="number" class=" form__input" id="inpKw" placeholder="Nhập Số Kw">
+                </div>
+                <button type="button" id="btnTienDien" class="col-3 m-auto btn btn-primary">Kết Quả</button>
+                <div class="form__content col-12">
+                    <span>👉</span>
+                    <span class="text-success" id="txtTienDien"></span>
+                </div>
+
+
+            </form>
+        </div>
+
 
 
 
